@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #2e7d32;
+  --secondary-color: #a5d6a7;
+  --text-color: #333;
+  --bg-color: #f0f7f1;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0,0,0,0.15);
+  --border-radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--card-shadow);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.navbar a {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
